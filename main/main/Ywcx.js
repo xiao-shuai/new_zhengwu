@@ -59,6 +59,9 @@ class Ywcx extends Component {
         return(
             <SafeAreaView style={{flex:1}}>
                 <ScrollView contentContainerStyle={{alignItems:'center',padding:20,flex:1,backgroundColor:global.t_bg}}>
+                 <Image source={require('../images/vv.jpg')} style={{width:0,height:0}}/>
+                 <View></View>
+                 <View></View>
                  {
                      val.map((i,k)=>{
                     return(
@@ -68,11 +71,14 @@ class Ywcx extends Component {
                     flexDirection:'row',
                     justifyContent:'space-between',alignItems:'center'
                     }}>
+                    <View>
                      <Ionicons name={i.icons} style={{fontSize:18,color:global.t_color}}/>
+                     </View>
                      <View style={{width:'60%'}}>
                          <Text style={{fontSize:18,fontWeight:'500'}}>{i.tit}</Text>
                          <Text style={{marginTop:10,color:global.t_hui}}>{i.con}</Text>
                      </View>
+
                      <TouchableOpacity onPress={()=>{
                     this.props.navigation.navigate('Jieguo')
                      }}>
