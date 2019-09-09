@@ -38,7 +38,9 @@ show_login=()=>{
     Alert.alert('提示','您暂未登录，请登录！',[{'text':'取消',onPress:()=>{}},
     {'text':'确定',onPress:()=>{this.login()}}])
    }
-
+   login=()=>{
+    this.props.navigation.reset([NavigationActions.navigate({ routeName: 'Login' })], 0)
+ }
    show_exit=()=>{
     Alert.alert('提示','确定退出登录吗?',[{'text':'取消',onPress:()=>{}},
     {'text':'确定',onPress:()=>{
@@ -135,7 +137,7 @@ show_login=()=>{
              }}>
                  <Text style={{fontSize:18,color:'red'}}>
             {
-                login?'退出':'未登录'
+                login?'退出':'去登录'
             }
                  </Text>
                  {/* <Ionicons name='ios-arrow-forward' style={{fontSize:20,color:'#797D7F'}}/> */}

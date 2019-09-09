@@ -14,7 +14,7 @@ import {global} from '../pz/styles'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import {Button,ListItem,SearchBar} from 'react-native-elements'
 import {inject,observer} from 'mobx-react'
-
+import { NavigationActions } from 'react-navigation';
 @inject(["mbx"])
 @observer // 监听当前组件
 class Cha extends Component {
@@ -33,6 +33,9 @@ componentWillMount(){
   .then(res=>{})
   .catch()
 
+}
+login=()=>{
+  this.props.navigation.reset([NavigationActions.navigate({ routeName: 'Login' })], 0)
 }
   show_login = () => {
     Alert.alert('提示', '您暂未登录，请登录！', [
