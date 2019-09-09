@@ -24,6 +24,7 @@ import  {global} from './styles'
 import Result from '../main/Result'
 import Jian_yi from '../main/Jian_yi'
 import { createStackNavigator } from 'react-navigation-stack';
+import Xy from '../main/Xy'
 const DDr=createBottomTabNavigator(
   {
       Main: Main,
@@ -171,6 +172,12 @@ const DDr=createBottomTabNavigator(
         screen:Jian_yi, 
         navigationOptions:()=>({
             title:'意见反馈',
+        })
+      },
+      Xy:{
+        screen:Xy, 
+        navigationOptions:()=>({
+            title:'服务协议',
         })
       },
       

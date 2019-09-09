@@ -87,7 +87,11 @@ creat=()=>{
                }}>
                    <Text style={{fontSize:18,color:'white'}}>创建</Text>
                </TouchableOpacity>
-              
+               <TouchableOpacity onPress={()=>{
+                 this.props.navigation.navigate('Xy')
+               }} style={{marginTop:20}}>
+              <Text style={{fontWeight:'500',color:'#797D7F'}}>注册即代表阅读并同意《服务协议》</Text>
+               </TouchableOpacity>
                 </ScrollView>
                 </KeyboardAwareScrollView>
             </SafeAreaView>
