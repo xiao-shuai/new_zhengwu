@@ -37,6 +37,9 @@ class QianZhu extends Component {
         return(
             <SafeAreaView style={{flex:1}}>
                 <Image source={require('../images/vv.jpg')} style={{width:0,height:0}}/>
+                 <View></View>
+                 <View></View>
+                 <View></View>
                 <ScrollView contentContainerStyle={{alignItems:'center',backgroundColor:global.t_bg,flex:1,padding:20}}>
                     {
                         val.map((i,k)=>{

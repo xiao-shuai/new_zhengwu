@@ -30,6 +30,10 @@ class Gonggao_xq extends Component {
         console.log('tit:',tit,'con',con)
         return(
             <SafeAreaView style={{flex:1}}>
+                <View></View>
+                <View></View>
+                <View></View>
+                <Image source={{width:0,height:0}} />
                 <ScrollView contentContainerStyle={{alignItems:'center',padding:20}}>
                 <Text style={{fontSize:18,fontWeight:'500'}}>{tit}</Text>
                 <Text style={{fontSize:16,marginTop:20,lineHeight:25,color:global.t_hui}}>{con}</Text>

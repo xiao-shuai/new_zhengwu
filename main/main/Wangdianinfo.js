@@ -49,6 +49,13 @@ class Wangdianinfo extends Component {
     render(){
         return(
             <SafeAreaView style={{flex:1}}>
+                <Image source={require('../images/vv.jpg')} 
+                style={{width:0,height:0}}/>
+                <Image source={require('../images/vv.jpg')} 
+                style={{width:0,height:0}}/>
+                <Image source={require('../images/vv.jpg')} 
+                style={{width:0,height:0}}/>
+                <View><Text></Text></View>
                 <ScrollView contentContainerStyle={{alignItems:'center'}}>
                     {
                         this.value.map((i,k)=>{

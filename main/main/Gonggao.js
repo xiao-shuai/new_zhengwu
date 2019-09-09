@@ -27,6 +27,8 @@ componentWillMount(){
   .then(res=>{})
   .catch()
 
+  AsyncStorage.getItem('h').then().catch()
+
 }
     render(){
         const list = [
@@ -44,6 +46,10 @@ componentWillMount(){
           ]
         return(
             <SafeAreaView style={{flex:1}}>
+              <View></View>
+              <View></View>
+              <View></View>
+              <View></View>
                 <ScrollView contentContainerStyle={{alignItems:'center'}}>
                 <View style={{padding:20,borderBottomColor:global.t_bg,
                 borderBottomWidth:3,width:global.g_w
@@ -73,7 +79,8 @@ componentWillMount(){
     ))
   }
                </View>
-              
+              <Image source={require('../images/vv.jpg')} 
+              style={{width:0,height:0}}/>
                 </ScrollView>
             </SafeAreaView>
         

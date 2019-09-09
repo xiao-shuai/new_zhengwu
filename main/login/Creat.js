@@ -8,12 +8,11 @@ import {
     StyleSheet,
     ActivityIndicator,
     TextInput,AsyncStorage,
-    SafeAreaView,KeyboardAvoidingView
+    SafeAreaView,KeyboardAvoidingView,Alert
 } from 'react-native'
 import {global} from '../pz/styles'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import {Button,ListItem,Input,CheckBox} from 'react-native-elements'
-import { Global } from '@jest/types';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 import { NavigationActions } from 'react-navigation';
 class Creat extends Component {
@@ -35,7 +34,7 @@ creat=()=>{
         .then(res=>{})
         .catch(err=>{})
          AsyncStorage.setItem('yes','ok')
-        this.props.navigation.reset([NavigationActions.navigate({ routeName: 'Main' })], 0)
+        this.props.navigation.reset([NavigationActions.navigate({ routeName: 'Btm' })], 0)
     }
 }
 
@@ -44,6 +43,7 @@ creat=()=>{
             <SafeAreaView style={{flex:1}}>
              <KeyboardAwareScrollView>
                 <ScrollView contentContainerStyle={{alignItems:'center',padding:20}}>
+                <Image source={require('../images/zw.png')} style={{width:global.g_w*.25,height:global.g_w*.25}} />
                     <View style={{width:'100%',marginTop:20}}>
                     <Text style={{fontSize:25,fontWeight:'500',color:global.t_color}}>创建账号</Text>
                     </View>
